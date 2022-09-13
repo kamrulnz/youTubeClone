@@ -1,13 +1,16 @@
 //import mongoose from 'mongoose';
 import User from "../models/User.js"
 
-const signup = async(req, res) => {
+export const signup = async(req, res) => {
+    console.log(req.body)
+    
+    /*
     try {
-        const newUser = new User()
+        const newUser = new User(req.body)
     } catch (error) {
         
     }
+    */
 
 }
 
-export default signup;

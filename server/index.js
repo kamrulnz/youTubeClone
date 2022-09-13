@@ -1,4 +1,4 @@
-//24.35 second porjonto porechi
+//27.35 second porjonto porechi
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv"
@@ -22,6 +22,8 @@ mongoose
 })
 }
 
+
+app.use(express.json())
 app.use('/api/auth', authRoutes  )
 app.use('/api/users', userRoutes)
 app.use('/api/videos', videoRoutes)
